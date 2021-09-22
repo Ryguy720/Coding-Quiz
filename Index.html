@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Coding Quiz</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="Assets/Style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="large-font">Coding Quiz</div>
+    <div class="large-font" id="countdisply">Time: <span id="countdown"> 0 </span> </div>
+    
+   
+  </header>
+
+  <main>
+    <section>
+      <div>
+        <ol id="Question1"> This Is Sample Q 1
+            <button class="Q1_Answers" id="Q1_A" value="False"><li>1Wrong</li></button>
+            <button class="Q1_Answers" id="Q1_B" value="True"><li>1Correct</li></button>
+            <button class="Q1_Answers" id="Q1_C" value="False"><li>1Answer</li></button>
+            <button class="Q1_Answers" id="Q1_D" value="False"><li>1Answer</li></button>
+        </ol>
+      </div>
+      <div>
+        <ol id="Question2">Sample Q 2
+          <button class="Q2_Answers" id="Q2_A" value="True"><li>2Answer</li></button>
+          <button class="Q2_Answers" id="Q2_B" value="False"><li>2Answer</li></button>
+          <button class="Q2_Answers" id="Q2_C" value="False"><li>2Answer</li></button>
+          <button class="Q2_Answers" id="Q2_D" value="False"><li>2Answer</li></button>
+        </ol> 
+      </div>
+      <div>
+        <ol id="Question3">Sample Q 3
+          <button class="Q3_Answers" id="Q3_A" value="False"><li>3Answer</li></button>
+          <button class="Q3_Answers" id="Q3_B" value="False"><li>3Answer</li></button>
+          <button class="Q3_Answers" id="Q3_C" value="False"><li>3Answer</li></button>
+          <button class="Q3_Answers" id="Q3_D" value="True"><li>3Answer</li></button>
+        </ol>
+      </div> 
+      <div>
+        <ol id="Question4">Sample Q 4
+          <button class="Q4_Answers" id="Q4_A" value="False"><li>4Answer</li></button>
+          <button class="Q4_Answers" id="Q4_B" value="False"><li>4Answer</li></button>
+          <button class="Q4_Answers" id="Q4_C" value="False"><li>4Answer</li></button>
+          <button class="Q4_Answers" id="Q4_D" value="True"><li>4Answer</li></button>
+        </ol>
+        </div>
+      </section>
+    </main>
+      
+    
+    <section id= "scores">
+      <h1>Finished!</h1>
+      <h2>Score <span id="results"></span></h2>
+    </section>
+
+  
+      <footer>
+        <form action="Assets\script.js">
+          <label for="user initials"> Initials:</label>
+          <input type="text" id="initials" name="initials"> 
+        </form>
+      <button id="start-button">Start</button>
+      <button id="Save_user">Save</button>
+      <button class="reset-button">Reset</button>
+    </footer>
+
+  <script src="Assets\script.js"></script>
+</body>
+
+</html>
