@@ -3,6 +3,8 @@ let time = document.getElementById('countdown');
 let startBtn = document.getElementById("start-button");
 let resetBtn = document.getElementById('reset-button');
 let saveBtn = document.getElementById("Save_user");
+let score = document.getElementById("results")
+let user = [];
 
 let Question1 = document.getElementById('Question1');
 let Question2 = document.getElementById('Question2');
@@ -136,10 +138,3 @@ function Forthquestion(){
     }
 }
 
-// reset Button
-
-resetBtn.addEventListener("click", resetPage);
-
-function resetPage(){
-    
-}
