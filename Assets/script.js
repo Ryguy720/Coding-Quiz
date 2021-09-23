@@ -31,7 +31,7 @@ let Q4D = document.getElementById('Q4_D');
 
 
 startBtn.addEventListener( "click" , function(){
-    Question1.style.display = "block";
+    Question1.style.visibility = "visible"; // NEED TO APPLY THIS TO ALL FUNTIONCS
 
 
 
@@ -53,25 +53,45 @@ Q1A.addEventListener("click" , wrongAnswers1);
 Q1C.addEventListener("click" , wrongAnswers1);
 Q1D.addEventListener("click" , wrongAnswers1);
 
-Q2B.addEventListener("click" , wrongAnswers1);
-Q2C.addEventListener("click" , wrongAnswers1);
-Q2D.addEventListener("click" , wrongAnswers1);
+Q2B.addEventListener("click" , wrongAnswers2);
+Q2C.addEventListener("click" , wrongAnswers2);
+Q2D.addEventListener("click" , wrongAnswers2);
 
-Q3A.addEventListener("click" , wrongAnswers1);
-Q3B.addEventListener("click" , wrongAnswers1);
-Q3C.addEventListener("click" , wrongAnswers1);
+Q3A.addEventListener("click" , wrongAnswers3);
+Q3B.addEventListener("click" , wrongAnswers3);
+Q3C.addEventListener("click" , wrongAnswers3);
+
+Q4A.addEventListener("click" , wrongAnswers4);
+Q4B.addEventListener("click" , wrongAnswers4);
+Q4C.addEventListener("click" , wrongAnswers4);
 
 
 function wrongAnswers1(){
-if(Q1A.value === "False" || Q1C.value === "False" || Q1D.value === "False" )
-    console.log("Incorrect")
-        Question1.style.display = "none";
-        Question2.style.display = "none";
-        Question3.style.display = "none";
-        Question4.style.display = "none";
-        alert("You Lose!")
+    if(Q1A.value === "False" || Q1C.value === "False" || Q1D.value === "False" )
+        console.log("Incorrect")
+            Question1.style.visibility = "hidden";
+            Question2.style.visibility = "visible";
 }
 
+function wrongAnswers2(){
+    if(Q2A.value === "False" || Q2C.value === "False" || Q2D.value === "False" )
+        console.log("Incorrect")
+            Question2.style.visibility = "hidden";
+            Question3.style.visibility = "visible";
+    }
+
+function wrongAnswers3(){
+    if(Q3A.value === "False" || Q3C.value === "False" || Q3D.value === "False" )
+            console.log("Incorrect")
+                Question3.style.visibility = "hidden";;
+                Question4.style.visibility = "visible";;
+        }
+
+function wrongAnswers4(){
+        if(Q4A.value === "False" || Q3C.value === "False" || Q3D.value === "False" )
+                console.log("Incorrect")
+                    Question4.style.visibility = "hidden";
+    }
 
 
 
@@ -86,8 +106,8 @@ Q4D.addEventListener("click" , Forthquestion);
 function Firstquestion(){
     if (Q1B.value === "True"){
         console.log("Correct!")
-        Question1.style.display= "none";
-        Question2.style.display= "block";
+        Question1.style.visibility = "hidden";
+        Question2.style.visibility = "visible";
     }
 
 }
@@ -95,23 +115,23 @@ function Firstquestion(){
 function Secondquestion(){
     if (Q2A.value === "True"){
         console.log("Correct!")
-        Question2.style.display= "none";
-        Question3.style.display= "block";
+        Question2.style.visibility = "hidden";
+        Question3.style.visibility = "visible";
     }
 }
 
 function Thirdquestion(){
     if (Q3D.value === "True"){
         console.log("Correct!")
-        Question3.style.display= "none";
-        Question4.style.display= "block";
+        Question3.style.visibility = "hidden";
+        Question4.style.visibility = "visible";
     }
 }
 
 function Forthquestion(){
     if (Q4D.value === "True"){
         console.log("Correct!")
-        Question4.style.display= "none";
+        Question4.style.visibility = "hidden";
 
     }
 }
